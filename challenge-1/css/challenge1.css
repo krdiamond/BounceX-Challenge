@@ -1,1 +1,75 @@
-/* -------------------------- YOUR CODE GOES HERE --------------------------  */
+/*************************
+ *  your code goes here  *
+ *************************/
+
+
+ /* ------------------------------- General --------------------------------  */
+
+ .bx-type .bx-creative {
+   background-color: #ffc216;
+   font-family: 'Helvetica Neue', Helvetica, sans-serif;
+   color: #000066;
+ }
+
+ /* -------------------------------- Logo ----------------------------------  */
+
+.lufthansa-logo {
+  width: 35%;
+  margin: 24px auto 36px;
+}
+
+/* ------------------------------ Text Area --------------------------------  */
+
+.bx-row-subheadline-1 {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: -1px;
+}
+
+.bx-row-headline{
+  font-weight: 700;
+  line-height: .6;
+  letter-spacing: -2px;
+}
+
+.bx-row-headline-1 {
+  font-size: 42px;
+}
+
+.bx-row-headline-2 {
+  font-size: 58px;
+  margin-bottom: 18px !important;
+}
+
+/* ----------------------------- Input Area --------------------------------  */
+.bx-grroup-2 {
+  margin-bottom: 48px;
+}
+
+.bx-row-email input, .bx-row-submit input {
+  width: 50% !important;
+  text-align: center;
+  border: #c2c2c2 !important;
+}
+
+.bx-row-email input {
+  font-size: 14px;
+  color: #c2c2c2;
+  height: 36px;
+  box-shadow:
+  0px 6px 7px -2px rgba(0,0,0,0.30),
+  inset 0 0 5px #c2c2c2;
+  -webkit-box-shadow:
+  0px 6px 7px -2px rgba(0,0,0,0.30),
+  inset 0 0 5px #c2c2c2;
+  -moz-box-shadow:
+  0px 6px 7px -2px rgba(0,0,0,0.30),
+  inset 0 0 5px #c2c2c2;
+  -o-box-shadow:
+  0px 6px 7px -2px rgba(0,0,0,0.30),
+  inset 0 0 5px #c2c2c2;
+}
+
+.bx-row-submit input {
+  font-size: 24px;
+}
