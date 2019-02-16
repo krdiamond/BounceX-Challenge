@@ -4,18 +4,31 @@
 
 
  /* ------------------------------- General --------------------------------  */
+.bx-type {
+  overflow-x: hidden;
+}
 
  .bx-type .bx-creative {
    background-color: #ffc216;
    font-family: 'Helvetica Neue', Helvetica, sans-serif;
    color: #000066;
  }
+ @media (max-width: 400px) {
+   .bx-type {
+     width: 95%
+   }
+ }
 
  /* -------------------------------- Logo ----------------------------------  */
 
 .lufthansa-logo {
-  width: 35%;
+  width: 200px;
   margin: 24px auto;
+}
+@media (max-width: 400px) {
+  .lufthansa-logo {
+    width: 50%;
+  }
 }
 
 /* ------------------------------ Text Area --------------------------------  */
@@ -41,6 +54,17 @@
   margin-bottom: 18px !important;
 }
 
+@media (max-width: 400px) {
+  .bx-row-subheadline-1 {
+    font-size: 4.6vw;
+  }
+  .bx-row-headline-1 {
+      font-size: 10.5vw;
+  }
+  .bx-row-headline-2 {
+    font-size: 14.5vw;
+  }
+}
 
 /* ----------------------------- Input Area --------------------------------  */
 .bx-group-2 {
@@ -89,17 +113,26 @@
   background-image: url(/Users/kristina/Programming/BounceX-Challenge/challenge-1/assets/right-arrow.png) ,linear-gradient(to bottom, #2755a2, #03066f);
   background-repeat: no-repeat;
   background-size: 26px, cover;
-  background-position: 20px center, center;
+  background-position: 14px center, center;
   width: 68px;
   border-right: 1px solid white;
   border-image-source: linear-gradient(#2755a2, white);
   border-image-slice: 1;
 }
 
+@media (max-width: 400px) {
+  .bx-row-email input {
+    width: 84% !important;
+  }
+  .bx-row-submit {
+    width: 80% !important;
+    margin: 0 10%;
+  }
+}
 /* ----------------------------- Lock Area --------------------------------  */
 
 .bx-close {
-  width: 8%;
+  width: 42px;
   margin: 12px;
   cursor: pointer;
 }
@@ -111,8 +144,18 @@
   height: 100px;
   position: absolute;
   right: 0;
-  box-shadow: 0px 6px 7px -2px rgba(0,0,0,0.30), inset 0 0 5px #c2c2c2;
-  -webkit-box-shadow: 0px 6px 7px -2px rgba(0,0,0,0.30), inset 0 0 5px #c2c2c2;
-  -moz-box-shadow: 0px 6px 7px -2px rgba(0,0,0,0.30), inset 0 0 5px #c2c2c2;
-  -o-box-shadow: 0px 6px 7px -2px rgba(0,0,0,0.30),inset 0 0 5px #c2c2c2;
+  box-shadow: 0px 6px 7px -2px rgba(0,0,0,0.30);
+  -webkit-box-shadow: 0px 6px 7px -2px rgba(0,0,0,0.30);
+  -moz-box-shadow: 0px 6px 7px -2px rgba(0,0,0,0.30);
+  -o-box-shadow: 0px 6px 7px -2px rgba(0,0,0,0.30);
+}
+
+@media (max-width: 400px) {
+  .bx-close {
+    width: 32px;
+    margin: 6px;
+  }
+  .diagnal {
+    height: 65px;
+  }
 }
