@@ -42,34 +42,54 @@
 }
 
 /* ----------------------------- Input Area --------------------------------  */
-.bx-grroup-2 {
+.bx-group-2 {
   margin-bottom: 48px;
 }
 
 .bx-row-email input, .bx-row-submit input {
-  width: 50% !important;
   text-align: center;
   border: #c2c2c2 !important;
 }
 
 .bx-row-email input {
+  width: 53% !important;
   font-size: 14px;
   color: #c2c2c2;
   height: 36px;
-  box-shadow:
-  0px 6px 7px -2px rgba(0,0,0,0.30),
-  inset 0 0 5px #c2c2c2;
-  -webkit-box-shadow:
-  0px 6px 7px -2px rgba(0,0,0,0.30),
-  inset 0 0 5px #c2c2c2;
-  -moz-box-shadow:
-  0px 6px 7px -2px rgba(0,0,0,0.30),
-  inset 0 0 5px #c2c2c2;
-  -o-box-shadow:
-  0px 6px 7px -2px rgba(0,0,0,0.30),
-  inset 0 0 5px #c2c2c2;
+  box-shadow: 0px 6px 7px -2px rgba(0,0,0,0.30), inset 0 0 5px #c2c2c2;
+  -webkit-box-shadow: 0px 6px 7px -2px rgba(0,0,0,0.30), inset 0 0 5px #c2c2c2;
+  -moz-box-shadow: 0px 6px 7px -2px rgba(0,0,0,0.30), inset 0 0 5px #c2c2c2;
+  -o-box-shadow: 0px 6px 7px -2px rgba(0,0,0,0.30),inset 0 0 5px #c2c2c2;
+}
+
+.bx-row-submit {
+  display: flex;
+  justify-content: center;
+  padding: 0 !important;
+  width: 52% !important;
+  height: 54px;
+  margin: 0 24%;
+  box-shadow: 0px 6px 7px -2px rgba(0,0,0,0.30), inset 0 0 5px #c2c2c2;
+  -webkit-box-shadow: 0px 6px 7px -2px rgba(0,0,0,0.30), inset 0 0 5px #c2c2c2;
+  -moz-box-shadow: 0px 6px 7px -2px rgba(0,0,0,0.30), inset 0 0 5px #c2c2c2;
+  -o-box-shadow: 0px 6px 7px -2px rgba(0,0,0,0.30),inset 0 0 5px #c2c2c2;
 }
 
 .bx-row-submit input {
   font-size: 24px;
+  background-image:linear-gradient(to bottom, #2755a2, #03066f);
+  padding: 0 !important;
 }
+
+.bx-row-submit .arrow {
+  background-image: url(/Users/kristina/Programming/BounceX-Challenge/challenge-1/assets/right-arrow.png) ,linear-gradient(to bottom, #2755a2, #03066f);
+  background-repeat: no-repeat;
+  background-size: 26px, cover;
+  background-position: 20px center, center;
+  width: 68px;
+  border-right: 1px solid white;
+  border-image-source: linear-gradient(#2755a2, white);
+  border-image-slice: 1;
+}
+
+/* ----------------------------- Lock Area --------------------------------  */
