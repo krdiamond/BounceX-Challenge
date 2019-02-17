@@ -26,5 +26,6 @@ $(document).on('click','.size .selectable',function () {
     $('.close').click(function(){
         $('.curtain').hide();
         $('.overlay').hide();
+        $('body').css({'overflow': 'auto' });
      })
 })
