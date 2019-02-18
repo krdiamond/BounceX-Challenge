@@ -1,27 +1,47 @@
 
 
-<div class="black-background"></div>
+<div class="curtain"></div>
 
 <div class="overlay">
-  <div class="copy">Get this
-    <span class='product-name'>{product name}</span> for
-    <span class='discount-price'>{discounted price}</span> with a 15% discount
+
+  <div class="close">x</div>
+
+<div class="overlay-content">
+  <div class="image-wrapper">
+    <img src="jacket.jpg" alt="Jacket">
   </div>
 
-  <a href="https://www.marmot.com/cart">Go To Cart</a>
+  <div class="right-wrapper">
+    <div class="text-wrapper">Get this<span class='product-name'>{product name}</span> for <span class='discount-price'>{discounted price}</span> with a 15% discount
+    </div>
+    <a class="cart-button" href="https://www.marmot.com/cart">CHECKOUT</a>
+  </div>
+</div>
 
-  <div class="close">Close Overlay</div>
+
 
 </div>
 
 
 <style>
 
-  .close {
-    border: 3px solid green;
+  img {
+    max-width:100%;
   }
 
-  .black-background {
+  .close {
+    border: 3px solid;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    font-size: 24px;
+    text-align: center;
+    line-height: 1;
+  }
+
+  .curtain {
     background: black;
     opacity: .75;
     width: 100vw;
@@ -31,10 +51,36 @@
   }
 
   .overlay {
-    background: lightpink;
+    background: white;
     position: absolute;
     left: 0; right: 0; bottom: 0; top: 0;
-    margin: 20%;
+    margin: 15% 20%;
     z-index: 100;
+    text-align: center;
+  }
+
+  .text-wrapper {
+    border: 3px solid;
+    margin: 10%;
+    font-family: 'ars_maquette_probold';
+  }
+
+  .right-wrapper {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .image-wrapper {
+    width: 25%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .cart-button {
+    border: 3px solid black;
+    padding: 12px 36px;
+    box-shadow: 5px 10px black;
+    text-decoration: none;
+    color: black;
   }
 </style>
