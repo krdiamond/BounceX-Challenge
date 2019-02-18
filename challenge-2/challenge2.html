@@ -3,15 +3,28 @@
 <!-- modal overlay -->
 <div class="overlay">
   <div class="close">X</div>
-  <div class="image-wrapper"></div>
-  <div class="right-wrapper">
+  <div class="left-wrapper">
     <div class="text-wrapper">
-      Get this <span class='overlay-product-name'></span> for <span class='overlay-discount-price'></span> with a 15% Discount
+      <div class="title">15% OFF</div>
+      <div class="body">Get this Women's 74 Featherless Jacket for $165.75 with a <span class="red-bold"> 15% Discount</span></div>
+
+    </div>
+    <div class="checkout">
+      <a class="checkout-button" href="https://www.marmot.com/cart">CHECKOUT</a>
     </div>
   </div>
+  <div class="right-wrapper">
+    <img src="jacket.jpg" alt="Jacket">
+  </div>
 </div>
-
 <style>
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 0;
+}
+
 .curtain {
   background: black;
   opacity: .75;
@@ -21,37 +34,85 @@
   z-index: 99;
 }
 .overlay {
-  background:white;
-  position:fixed;
-  z-index:100;top:50%;
-  left:50%;
-  transform:translate(-50%,-50%);
+  background: white;
+  position: fixed;
+  z-index: 100;
+  width: 800px;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+@media (min-width: 900px) {
+  .overlay {
+    width: 80%;
+  }
 }
 .close {
   cursor: pointer;
   border: 3px solid;
   position: absolute;
-  right: 0;top: 0;
+  right: 0; top: 0;
   width: 30px;
   height: 30px;
   font-size: 24px;
   text-align: center;
   line-height: 1;
 }
-.image-wrapper {
-  cursor: pointer;
-  border: 3px solid;
-  position: absolute;
-  right: 0;top: 0;
-  width: 30px;
-  height: 30px;
-  font-size: 24px;
-  text-align:
-  center;line-height: 1;
+.right-wrapper {
+  padding: 3%;
+}
+.left-wrapper {
+    padding: 14% 7%;
+}
+div {
+  border: 2px dashed #f69c55;
 }
 .text-wrapper {
-  font-size:36px;
-  text-align:right;
-  font-family:'ars_maquette_probold';
+  text-align: left;
+  font-family: 'ars_maquette_prolight';
+  margin-bottom: 48px;
+}
+.title {
+  font-family: 'ars_maquette_problack' ,Arial,Helvetica,sans-serif;
+  font-size: 68px;
+  line-height: 1;
+  font-weight: 400;
+}
+.description {
+  font-size: 24px;
+}
+.red-bold {
+  color: #cc0001;
+  font-family: 'ars_maquette_problack' ,Arial,Helvetica,sans-serif;
+}
+.checkout {
+  text-align: center;
+  line-height: 3;
+}
+.checkout-button {
+  border: 3px solid black;
+  padding: 24px 48px;
+  box-shadow: 5px 10px black;
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+}
+
+@media (min-width: 900px) {
+  .overlay {
+    width: 80%;
+  }
+  .title {
+    font-size: 6vw;
+  }
+  .description {
+    font-size: 3vw;
+  }
+  .checkout-button {
+    padding: 8% 17%;
+    font-size: 2vw;
+  }
 }
 </style>
