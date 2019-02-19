@@ -7,7 +7,7 @@ Create a modal. BounceX provided the HTML and I was asked to add CSS to match th
 
 
 ### Challenge #2
-Using the website marmot.com, write some JavaScript or jQuery code that can be run in the console of the browser on any product page.
+Using the website marmot.com, BounceX requested that I write some JavaScript or jQuery code that can be run in the console of the browser on any product page.
 The code should do the following:
 - Store variables for product name, product price, and a 15% discounted price.
 - Create a trigger that activates an overlay when the user clicks any size option.
