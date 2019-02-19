@@ -32,7 +32,6 @@ $(document).on('click','.size .selectable',function () {
         z-index: 99;
       }
       .overlay {
-        background: white;
         background-image: url('https://github.com/krdiamond/BounceX-Challenge/blob/master/challenge-2/mountains.jpg?raw=true');
         background-repeat: no-repeat;
         position: fixed;
@@ -42,6 +41,7 @@ $(document).on('click','.size .selectable',function () {
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
+        border: 3px solid black;
       }
       .close {
         cursor: pointer;
@@ -82,7 +82,7 @@ $(document).on('click','.size .selectable',function () {
         font-family: 'ars_maquette_problack' ,Arial,Helvetica,sans-serif;
       }
       .checkout {
-        text-align: center;
+        text-align: left;
         line-height: 3;
       }
       .overlay-checkout-button {
@@ -96,6 +96,9 @@ $(document).on('click','.size .selectable',function () {
         opacity: .9;
         font-family: 'ars_maquette_probold' ,Arial,Helvetica,sans-serif;
       }
+      .overlay-checkout-button:hover {
+        background: lightgrey;
+      }
       .jacket {
         border: 6px solid black;
       }
@@ -107,7 +110,7 @@ $(document).on('click','.size .selectable',function () {
           width: 80%;
         }
         .left-wrapper {
-          padding: 14% 3% 14% 7%;
+          padding: 14% 0 14% 7%;
         }
         .right-wrapper {
           padding: 8% 4%;
@@ -119,8 +122,11 @@ $(document).on('click','.size .selectable',function () {
           font-size: 3vw;
         }
         .overlay-checkout-button {
-          padding: 5% 15%;
+          padding: 5% 21%;
           font-size: 2vw;
+        }
+        .jacket {
+            border: 3px solid black;
         }
       }
       @media (max-width: 570px) {
@@ -134,9 +140,6 @@ $(document).on('click','.size .selectable',function () {
         .right-wrapper {
             padding: 10% 6%;
         }
-        .jacket {
-            border: 3px solid black;
-        }
         .close {
             border: 2px solid;
             position: absolute;
@@ -148,6 +151,30 @@ $(document).on('click','.size .selectable',function () {
             text-align: center;
             line-height: 1;
             margin: 3px;
+        }
+      }
+      @media (max-width: 350px) {
+        .overlay {
+          display: block;
+        }
+        .left-wrapper {
+            padding: 14%;
+        }
+        .right-wrapper {
+            display: none;
+        }
+        .title {
+            font-size: 12vw;
+        }
+        .description {
+            font-size: 6vw;
+        }
+        .text-wrapper {
+          margin: 0;
+        }
+        .overlay-checkout-button {
+            padding: 1% 12% 3%;
+            font-size: 5vw;
         }
       }
       </style>`
