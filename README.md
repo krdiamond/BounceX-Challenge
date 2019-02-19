@@ -15,3 +15,5 @@ The code should do the following:
 "Get this {product name} for {discounted price} with a 15% discount"
 - Behind the overlay add a semi­-transparent black background that obscures the site.
 - The overlay should be able to trigger multiple times if dismissed.
+
+<img src="https://github.com/krdiamond/BounceX-Challenge/blob/master/challenge-2/final-overlay.jpg?raw=true" width="400" />
