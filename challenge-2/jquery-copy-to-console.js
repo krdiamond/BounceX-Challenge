@@ -31,6 +31,8 @@ $(document).on('click','.size .selectable',function () {
       }
       .overlay {
         background: white;
+        background-image: url('https://www.instagram.com/p/BbY5Fi_HxOn/?utm_source=ig_embed');
+        background-repeat: no-repeat;
         position: fixed;
         z-index: 100;
         width: 800px;
