@@ -1,7 +1,9 @@
 var productName = $('.product-name').first().text();
 var productPrice = ($('.price-sales').first().text().split(':'))[1].trim().split('$')[1];
-var productPriceInt = parseInt(productPrice);
+var productPriceInt = parseInt(productPrice).toFixed(2);
 var discountPrice = productPriceInt - (productPriceInt * .15);
+var discountPriceDecimal = discountPrice.toFixed(2);
+
 
 $(document).on('click','.size .selectable',function () {
   $('body').css({'overflow': 'hidden' });
@@ -31,7 +33,7 @@ $(document).on('click','.size .selectable',function () {
       }
       .overlay {
         background: white;
-        background-image: url('https://www.instagram.com/p/BbY5Fi_HxOn/?utm_source=ig_embed');
+        background-image: url('https://github.com/krdiamond/BounceX-Challenge/blob/master/challenge-2/mountains.jpg?raw=true');
         background-repeat: no-repeat;
         position: fixed;
         z-index: 100;
@@ -54,7 +56,7 @@ $(document).on('click','.size .selectable',function () {
         margin: 3px
       }
       .right-wrapper {
-        padding: 3%;
+        padding: 5%;
         text-align: center;
       }
       .left-wrapper {
@@ -67,7 +69,7 @@ $(document).on('click','.size .selectable',function () {
       }
       .title {
         font-family: 'ars_maquette_problack' ,Arial,Helvetica,sans-serif;
-        font-size: 68px;
+        font-size: 64px;
         line-height: 1;
         font-weight: 400;
         margin-bottom: 6px;
@@ -83,13 +85,19 @@ $(document).on('click','.size .selectable',function () {
         text-align: center;
         line-height: 3;
       }
-      .checkout-button {
+      .overlay-checkout-button {
         border: 3px solid black;
         padding: 24px 48px;
         box-shadow: 5px 10px black;
         text-decoration: none;
-        color: white;
+        color: black;
         font-size: 24px;
+        background: white;
+        opacity: .9;
+        font-family: 'ars_maquette_probold' ,Arial,Helvetica,sans-serif;
+      }
+      .jacket {
+        border: 6px solid black;
       }
       @media (max-width: 900px) {
         img {
@@ -102,7 +110,7 @@ $(document).on('click','.size .selectable',function () {
           padding: 14% 3% 14% 7%;
         }
         .right-wrapper {
-          padding: 5% 2%;
+          padding: 8% 4%;
         }
         .title {
           font-size: 4.6vw;
@@ -110,7 +118,7 @@ $(document).on('click','.size .selectable',function () {
         .description {
           font-size: 3vw;
         }
-        .checkout-button {
+        .overlay-checkout-button {
           padding: 5% 15%;
           font-size: 2vw;
         }
@@ -119,18 +127,35 @@ $(document).on('click','.size .selectable',function () {
         .title {
           font-size: 4.7vw;
         }
-        .checkout-button {
+        .overlay-checkout-button {
           border: 1px solid black;
           box-shadow: 3px 5px black;
+        }
+        .right-wrapper {
+            padding: 10% 6%;
+        }
+        .jacket {
+            border: 3px solid black;
+        }
+        .close {
+            border: 2px solid;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 20px;
+            height: 20px;
+            font-size: 16px;
+            text-align: center;
+            line-height: 1;
+            margin: 3px;
         }
       }
       </style>`
     );
     $('.overlay-product-name').text(productName);
-    $('.overlay-discount-price').text(discountPrice);
-    $('.overlay-discount-price').text('$' + discountPrice);
-    $('.right-wrapper').append($('.primary-image').first());
-    $('.checkout').append('<a href="https://www.marmot.com/cart" class="checkout-button">Go To Cart</a>')
+    $('.overlay-discount-price').text('$' + discountPriceDecimal);
+    $('.right-wrapper').append($('.primary-image').first().addClass('jacket'));
+    $('.checkout').append('<a href="https://www.marmot.com/cart" class="overlay-checkout-button">Go To Cart</a>')
     $('.close').click(function(){
         $('.curtain').hide();
         $('.overlay').hide();
