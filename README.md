@@ -16,6 +16,6 @@ The code should do the following:
 - Behind the overlay add a semi­-transparent black background that obscures the site.
 - The overlay should be able to trigger multiple times if dismissed.
 
-Navigate to a www.marmot.com product page. Copy and paste the contents from the file 'jquery-copy-to-console.js' into the console. Click a size option to see the overlay.
+Navigate to a www.marmot.com product page. Copy and paste the code from the file 'jquery-copy-to-console.js' into your browser console. Click a size option to see the overlay popup.
 
 <img src="https://github.com/krdiamond/BounceX-Challenge/blob/master/challenge-2/final-overlay.jpg?raw=true" width="400" />
